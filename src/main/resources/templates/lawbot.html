@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>법률 상담 AI</title>
+</head>
+<body>
+    <h1>법률 상담 AI</h1>
+
+    <form method="get" action="/legal-advice">
+        <label>질문을 입력하세요:</label>
+        <input type="text" name="question" required />
+        <button type="submit">상담 요청</button>
+    </form>
+
+    <div th:if="${question}">
+        <h2>사용자 질문:</h2>
+        <p th:text="${question}"></p>
+
+        <h2>AI 답변:</h2>
+        <p th:text="${response}"></p>
+    </div>
+</body>
+</html>

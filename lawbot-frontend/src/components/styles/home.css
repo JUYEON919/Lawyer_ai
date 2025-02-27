@@ -1,0 +1,153 @@
+/* 기본 스타일링 */
+body, html {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    height: 100vh; /* 전체 화면 높이를 100vh로 설정 */
+    overflow: hidden; /* 스크롤 방지 */
+}
+
+/* App 전체 레이아웃 */
+.Home {
+    display: flex;
+    flex-direction: column;
+    height: 100vh; /* 전체 높이를 100vh로 설정 */
+}
+
+/************************************************ 헤더 */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+    background-color: #222;
+    color: white;
+    font-size: 30px;
+    font-weight: bold;
+    height: 8vh;
+}
+
+/* 로그인 버튼 스타일 */
+.login-btn {
+    width: 50px;  /* 버튼 크기 */
+    height: 50px; /* 버튼 크기 */
+    border-radius: 50%; /* 원형 버튼 */
+    background-color: #444; /* 배경 */
+    border: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+/* 버튼 hover 효과 */
+.login-btn:hover {
+    background-color: #fff;
+}
+
+/* 아이콘 크기 및 색상 */
+.icon {
+    color: white;
+    font-size: 28px; /* 아이콘 크기 */
+}
+
+/*************************************************** 메인 배너 */
+.main-banner {
+    text-align: center;
+    background-color: #000;
+    color: #fff;
+    height: 50vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.T1 {
+    font-size: 50px;
+    font-weight: bolder;
+}
+
+.main-banner p {
+    font-size: 16px;
+}
+
+.main-banner button {
+    margin-top: 30px;
+    padding: 15px 40px;
+    background-color: #ffde59;
+    color: #000;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.main-banner button:hover {
+    background-color: #0056b3;
+    color: #fff;
+}
+
+/************************************************** 3박스 섹션 */
+.feature-section {
+    background-color: #000;
+    color: #fff;
+    height: 37vh; /* 높이 30% */
+    display: flex;
+    justify-content: space-between; /* 좌우 배치 */
+    align-items: center;
+    padding: 0 5%; /* 양쪽 여백 */
+    border-top: #fff;
+    border-top: 2px solid #fff;
+}
+
+/* 왼쪽 텍스트 */
+.intro-text {
+    width: 50%; /* 전체의 절반 차지 */
+    font-size: 14px;
+    line-height: 1.5;
+    padding-right: 10px;
+}
+
+/* 오른쪽 버튼 영역 */
+.feature-cards {
+    display: flex;
+    justify-content: space-around;
+    width: 50%; /* 전체의 절반 차지 */
+    padding-left: 10px;
+}
+
+/* 버튼 스타일 */
+.card {
+    background-color: #ffde59;
+    color: #000;
+    padding: 60px 20px ;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 30%; /* 버튼 크기 조정 */
+    font-size: 16px;
+    font-weight: bolder;
+    border: none;
+    cursor: pointer;
+}
+
+.card:hover {
+    background-color: #0056b3;
+    color: #fff;
+}
+
+
+/***************************************************************** 푸터 */
+footer {
+    text-align: center;
+    background-color: #222;
+    color: white;
+    font-size: 11px;
+    height: 5vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
